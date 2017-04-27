@@ -6,11 +6,11 @@
 
 include_recipe 'java'
 
-tomcat_install 'tomcat' do
+tomcat_install 'cj' do
   version '8.0.36'
 end
 
-tomcat_service 'tomcat' do
+tomcat_service 'cj' do
   action :start
-#  env_vars [{ 'JRE_HOME' => '/usr/lib/jvm/default-java' }]
+  env_vars [{ 'JAVA_HOME' => '/usr/lib/jvm/default-java' }]
 end
