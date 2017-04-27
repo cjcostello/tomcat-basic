@@ -1,5 +1,5 @@
 {
-  "revision_id": "8a8b964cee05893cefd4c10b060dc057c5bfad9bc40857ac58e97172fdf2d195",
+  "revision_id": "6beabd3956f76769db485424fe295385d2408f9f258db37283f54dafa4c19c8e",
   "name": "tomcat-basic",
   "run_list": [
     "recipe[tomcat-basic::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "tomcat-basic": {
       "version": "0.1.0",
-      "identifier": "df4160679b315ec479e9588bd95ab1a70a51b8ad",
-      "dotted_decimal_identifier": "62840802117366110.55303138555189594.195330990782637",
+      "identifier": "15ed94d0be26a2489e777ef264bbe983c5c1e0ca",
+      "dotted_decimal_identifier": "6172197923989154.20440434391278779.256752167805130",
       "source": "cookbooks/tomcat-basic",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:cjcostello/tomcat-basic.git",
-        "revision": "d2d7dd7db85b291cf530c2e88d3d5cd69c522243",
+        "revision": "5f5bc29a78ffe2526034e360ce53250f60e863fd",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -36,17 +36,6 @@
         "version": "2.4.0"
       }
     },
-    "java": {
-      "version": "1.49.0",
-      "identifier": "a77b248d673cbce4b20bdc17765029da9c1c9c83",
-      "dotted_decimal_identifier": "47141718032071868.64372058696939088.46018898730115",
-      "cache_key": "java-1.49.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/java/versions/1.49.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/java/versions/1.49.0/download",
-        "version": "1.49.0"
-      }
-    },
     "compat_resource": {
       "version": "12.19.0",
       "identifier": "215097eec00a7969a00a551aaad1fa7ddea24e30",
@@ -56,50 +45,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.19.0/download",
         "version": "12.19.0"
-      }
-    },
-    "apt": {
-      "version": "6.1.0",
-      "identifier": "be80d9f3cefb05f102733ff098df5aab3698224c",
-      "dotted_decimal_identifier": "53621919161711365.67838163404495071.99691401847372",
-      "cache_key": "apt-6.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/6.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/6.1.0/download",
-        "version": "6.1.0"
-      }
-    },
-    "windows": {
-      "version": "3.0.5",
-      "identifier": "470450a54f82c38a4b84254ada98c2d47288333b",
-      "dotted_decimal_identifier": "19989467763802819.38926577719499416.214217710383931",
-      "cache_key": "windows-3.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.0.5/download",
-        "version": "3.0.5"
-      }
-    },
-    "homebrew": {
-      "version": "4.1.0",
-      "identifier": "f2183e04a94dc400fc109e8fda5e64d4f38ca611",
-      "dotted_decimal_identifier": "68143599009222084.277148309903966.110865781925393",
-      "cache_key": "homebrew-4.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/4.1.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/homebrew/versions/4.1.0/download",
-        "version": "4.1.0"
-      }
-    },
-    "ohai": {
-      "version": "5.0.4",
-      "identifier": "b52c7887be1384fdc82b784b4802fc66fe3c1f58",
-      "dotted_decimal_identifier": "50995866969707396.71433258135144450.277519282216792",
-      "cache_key": "ohai-5.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.0.4/download",
-        "version": "5.0.4"
       }
     }
   },
@@ -120,38 +65,14 @@
         "= 2.4.0"
       ],
       [
-        "java",
-        "= 1.49.0"
-      ],
-      [
         "compat_resource",
         "= 12.19.0"
-      ],
-      [
-        "apt",
-        "= 6.1.0"
-      ],
-      [
-        "windows",
-        "= 3.0.5"
-      ],
-      [
-        "homebrew",
-        "= 4.1.0"
-      ],
-      [
-        "ohai",
-        "= 5.0.4"
       ]
     ],
     "dependencies": {
       "tomcat-basic (0.1.0)": [
         [
           "tomcat",
-          ">= 0.0.0"
-        ],
-        [
-          "java",
           ">= 0.0.0"
         ]
       ],
@@ -161,36 +82,7 @@
           ">= 12.16.0"
         ]
       ],
-      "java (1.49.0)": [
-        [
-          "apt",
-          ">= 0.0.0"
-        ],
-        [
-          "windows",
-          ">= 0.0.0"
-        ],
-        [
-          "homebrew",
-          ">= 0.0.0"
-        ]
-      ],
       "compat_resource (12.19.0)": [
-
-      ],
-      "apt (6.1.0)": [
-
-      ],
-      "windows (3.0.5)": [
-        [
-          "ohai",
-          ">= 4.0.0"
-        ]
-      ],
-      "homebrew (4.1.0)": [
-
-      ],
-      "ohai (5.0.4)": [
 
       ]
     }
