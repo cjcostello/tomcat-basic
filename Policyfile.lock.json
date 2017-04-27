@@ -1,5 +1,5 @@
 {
-  "revision_id": "c4962b591e127ec4b9af8bc25b3e0ef67207e98b4ff31853b8725294180f1ade",
+  "revision_id": "ca060d0b95ff365ed4847c7253bb876d52926307630f8f5b7b47c383eebea1fd",
   "name": "tomcat-basic",
   "run_list": [
     "recipe[tomcat-basic::default]"
@@ -7,15 +7,15 @@
   "cookbook_locks": {
     "tomcat-basic": {
       "version": "0.1.0",
-      "identifier": "50138928b9e448728870835f74216cd846d85c63",
-      "dotted_decimal_identifier": "22539477951571016.32238164166800417.119676157320291",
+      "identifier": "3b35aaf6dca290131ce9dabf970722bc842683fa",
+      "dotted_decimal_identifier": "16666032028295824.5379815280449287.38193066312698",
       "source": "cookbooks/tomcat-basic",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:cjcostello/tomcat-basic.git",
-        "revision": "1ad9e6a2bc35466d333fe3289e6cc82a7dd7453c",
-        "working_tree_clean": true,
+        "revision": "85749f0ba9c75ffcc3a0aaf66bd4dd6bdcfdafc9",
+        "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
 
@@ -36,17 +36,6 @@
         "version": "2.4.0"
       }
     },
-    "application_java": {
-      "version": "3.0.0",
-      "identifier": "ef40cf79315a4828a1c716ac8836e2c986e82952",
-      "dotted_decimal_identifier": "67343779269532232.11436875519395894.249355179665746",
-      "cache_key": "application_java-3.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/application_java/versions/3.0.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/application_java/versions/3.0.0/download",
-        "version": "3.0.0"
-      }
-    },
     "java": {
       "version": "1.49.0",
       "identifier": "a77b248d673cbce4b20bdc17765029da9c1c9c83",
@@ -56,17 +45,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/java/versions/1.49.0/download",
         "version": "1.49.0"
-      }
-    },
-    "application": {
-      "version": "3.0.0",
-      "identifier": "6c2d1bcf3a02f11677e877b1de0c40aa9e4b8599",
-      "dotted_decimal_identifier": "30448894948803313.6324289811897868.71101544367513",
-      "cache_key": "application-3.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/application/versions/3.0.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/application/versions/3.0.0/download",
-        "version": "3.0.0"
       }
     },
     "compat_resource": {
@@ -142,16 +120,8 @@
         "= 2.4.0"
       ],
       [
-        "application_java",
-        "= 3.0.0"
-      ],
-      [
         "java",
         "= 1.49.0"
-      ],
-      [
-        "application",
-        "= 3.0.0"
       ],
       [
         "compat_resource",
@@ -181,7 +151,7 @@
           ">= 0.0.0"
         ],
         [
-          "application_java",
+          "java",
           ">= 0.0.0"
         ]
       ],
@@ -189,20 +159,6 @@
         [
           "compat_resource",
           ">= 12.16.0"
-        ]
-      ],
-      "application_java (3.0.0)": [
-        [
-          "java",
-          ">= 0.0.0"
-        ],
-        [
-          "tomcat",
-          ">= 0.0.0"
-        ],
-        [
-          "application",
-          "~> 3.0"
         ]
       ],
       "java (1.49.0)": [
@@ -218,9 +174,6 @@
           "homebrew",
           ">= 0.0.0"
         ]
-      ],
-      "application (3.0.0)": [
-
       ],
       "compat_resource (12.19.0)": [
 
