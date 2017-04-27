@@ -1,26 +1,16 @@
 ---
 driver:
   name: vagrant
+  network:
+    - ["forwarded_port", {guest: 80, host: 8080}]
 
 provisioner:
-  name: chef_zero
-  # You may wish to disable always updating cookbooks in CI or other testing environments.
-  # For example:
-  #   always_update_cookbooks: <%= !ENV['CI'] %>
-  always_update_cookbooks: true
-
-verifier:
-  name: inspec
+  name: policyfile_zero
+  require_chef_omnibus: true
 
 platforms:
-  - name: ubuntu-16.04
-  - name: centos-7.3
+  - name: ubuntu-14.04
 
 suites:
   - name: default
-    run_list:
-      - recipe[tomcat-basic::default]
-    verifier:
-      inspec_tests:
-        - test/smoke/default
     attributes:
