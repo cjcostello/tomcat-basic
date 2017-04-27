@@ -1,5 +1,5 @@
 {
-  "revision_id": "6beabd3956f76769db485424fe295385d2408f9f258db37283f54dafa4c19c8e",
+  "revision_id": "9ecda31bc479ef43ee72612e12408d306f36b7435f44e31dd7f3db5386d6ed88",
   "name": "tomcat-basic",
   "run_list": [
     "recipe[tomcat-basic::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "tomcat-basic": {
       "version": "0.1.0",
-      "identifier": "15ed94d0be26a2489e777ef264bbe983c5c1e0ca",
-      "dotted_decimal_identifier": "6172197923989154.20440434391278779.256752167805130",
+      "identifier": "5a3ca43b865302407522dc06e28247bd5c5e6c00",
+      "dotted_decimal_identifier": "25399423974920962.18143191090258562.78878624082944",
       "source": "cookbooks/tomcat-basic",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:cjcostello/tomcat-basic.git",
-        "revision": "5f5bc29a78ffe2526034e360ce53250f60e863fd",
+        "revision": "538364d9d4f55f4a2318b1183adde31615aacbd6",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
