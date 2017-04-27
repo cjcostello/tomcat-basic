@@ -1,0 +1,48 @@
+{
+  "revision_id": "3c9bae3d7e12d67c5ef66231106fe0bfd80e19bde94ff8e5c4ae697b3c066558",
+  "name": "tomcat-basic",
+  "run_list": [
+    "recipe[tomcat-basic::default]"
+  ],
+  "cookbook_locks": {
+    "tomcat-basic": {
+      "version": "0.1.0",
+      "identifier": "76630079f5c741cb7cfffed7da664867dd92bab5",
+      "dotted_decimal_identifier": "33322900949157697.57276859206326886.79610936212149",
+      "source": "cookbooks/tomcat-basic",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "git@github.com:cjcostello/tomcat-basic.git",
+        "revision": "0d5264007267924db94ffaf05e21edbd444db920",
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/tomcat-basic"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "tomcat-basic",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "tomcat-basic (0.1.0)": [
+
+      ]
+    }
+  }
+}
