@@ -1,5 +1,5 @@
 {
-  "revision_id": "b352c54d3a82d18af47fdb69cbeb80d19cfacbe8ba18a1ad593ee3cc2771f70f",
+  "revision_id": "9b6533d8b4af6d40f29af1cf1c3eba885c2f7966829f033938bd579afb3f83bb",
   "name": "tomcat-basic",
   "run_list": [
     "recipe[tomcat-basic::default]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "tomcat-basic": {
       "version": "0.1.0",
-      "identifier": "8dd95e2bb82dfa7b36b9eff7828c061363f2ca64",
-      "dotted_decimal_identifier": "39926970199846394.34681594358235788.6680351001188",
+      "identifier": "783d6b54fdd1fabc7e229865ed733e9ab05ec17f",
+      "dotted_decimal_identifier": "33844528401994234.53055982672407923.68834104885631",
       "source": "cookbooks/tomcat-basic",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:cjcostello/tomcat-basic.git",
-        "revision": "166ee2addcc6ccc756ed1093e2e2c902be44b7fc",
+        "revision": "8ef98d7bc795d906e60e9cc1212aee4af674cf3a",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -145,16 +145,6 @@
       ]
     ],
     "dependencies": {
-      "tomcat-basic (0.1.0)": [
-        [
-          "java",
-          ">= 0.0.0"
-        ],
-        [
-          "tomcat",
-          ">= 0.0.0"
-        ]
-      ],
       "java (1.49.0)": [
         [
           "apt",
@@ -192,6 +182,16 @@
       ],
       "ohai (5.0.4)": [
 
+      ],
+      "tomcat-basic (0.1.0)": [
+        [
+          "java",
+          ">= 0.0.0"
+        ],
+        [
+          "tomcat",
+          ">= 0.0.0"
+        ]
       ]
     }
   }
