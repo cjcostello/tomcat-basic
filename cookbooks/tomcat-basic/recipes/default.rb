@@ -32,10 +32,10 @@ cookbook_file '/opt/tomcat_helloworld/conf/server.xml' do
   notifies :restart, 'tomcat_service[helloworld]'
 end
 
-remote_file '/opt/tomcat_helloworld/webapps/sample.war' do
+remote_file '/opt/tomcat_helloworld/webapps/jenkins.war' do
   owner 'cool_user'
   mode '0644'
-  source 'https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.war'
+  source 'https://updates.jenkins-ci.org/download/war/2.57/jenkins.war'
 end
 
 # start the helloworld tomcat service using a non-standard pic location
