@@ -35,7 +35,7 @@ end
 remote_file '/opt/tomcat_helloworld/webapps/sample.war' do
   owner 'cool_user'
   mode '0644'
-  source 'https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war'
+  source 'https://sourceforge.net/projects/simpcalc/files/latest/download'
 end
 
 # start the helloworld tomcat service using a non-standard pic location
